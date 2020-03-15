@@ -53,7 +53,7 @@ def get_bounding_box(svgfile):
 def clip(inputfile, outputfile):
     name, x, y, width, height = get_bounding_box(inputfile)
 
-    bigger_size = max(width, height)
+    bigger_size = max(width, height)+6
     width_diff = (bigger_size-width)/2
     height_diff = (bigger_size-height)/2
 
